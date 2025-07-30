@@ -67,7 +67,7 @@
       try {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password);
         alert("✅ Registered successfully!");
-        // window.location.href = "mysterious.html";
+        // window.location.href = "main.html";
       } catch (error) {
         let message = "An unexpected error occurred during registration.";
 
@@ -89,7 +89,7 @@
         const result = await signInWithPopup(auth, provider);
         const user = result.user;
         alert("✅ Signed in as " + user.displayName);
-        // window.location.href = "mysterious.html";
+        // window.location.href = "main.html";
       } catch (error) {
         let message = "An error occurred during Google sign-in.";
 

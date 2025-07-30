@@ -123,7 +123,7 @@
 
       auth.signInWithEmailAndPassword(email, password)
         .then(() => {
-          window.location.href = "mysterious.html";
+          window.location.href = "main.html";
         })
         .catch((error) => {
           alert("Login failed: " + error.message);
@@ -136,7 +136,7 @@
         .then((result) => {
           const user = result.user;
           alert("✅ Logged in as " + user.displayName);
-          window.location.href = "mysterious.html";
+          window.location.href = "main.html";
         })
         .catch((error) => {
           let message = "❌ Google Sign-in failed: " + error.message;
