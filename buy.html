@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MYSTERIOUS XITERS</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background: #0d0d0d;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: #0d0d0d;
+    }
+
+    .container {
+      background: black;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+      animation: fadeIn 2s ease;
+    }
+
+    .container img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      box-shadow: 0px 0px 20px rgb(255, 5, 5);
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    p {
+      font-size: 14px;
+      color: #bbb;
+      margin-bottom: 20px;
+    }
+
+    .discord-btn {
+      display: inline-block;
+      padding: 15px 25px;
+      background: #5865F2;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .discord-btn:hover {
+      background: #4752C4;
+      transform: scale(1.05);
+      box-shadow: 0px 6px 16px rgba(0,0,0,0.5);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .trademark {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <div class="container">
+    <img src="mysterious2.png" alt="MYSTERIOUS XITERS">
+    <h1>MYSTERIOUS XITERS</h1>
+    <p>If you want to purchase, please contact us on Discord.</p>
+    <a href="https://discord.com/users/1189044207193698406" class="discord-btn">Buy Now</a>
+    <p class="trademark">&#169 MYSTERIOUS XITERS</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 60 },
+        "size": { "value": 3 },
+        "move": { "speed": 2 },
+        "line_linked": { "enable": true, "color": "#5865F2" }
+      }
+    });
+  </script>
+</body>
+</html>
